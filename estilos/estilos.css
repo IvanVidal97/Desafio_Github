@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:wght@100;400&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Oswald, Roboto";
+    
+
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    
+    "header header header"
+    " nav productos publicidad"
+    "nav servicios publicidad"
+    "footer footer footer"
+    ;
+    grid-template-rows: 150px 1fr 1fr 100px ;
+    grid-template-columns: 15% auto auto 15%;
+    
+    height: 100vh;
+    
+}
+
+.border{
+    border: 0.5px solid rgb(255, 250, 250);
+}
+header{
+    display: flex;
+    background-color: beige;
+    grid-area:header;  
+       
+}
+
+footer{
+    background-color: rgb(235, 208, 134);
+    grid-area:footer;
+}
+section#productos{
+    background-color: rgb(233, 215, 182);
+    grid-area:productos;
+    
+}
+section#servicios{
+    background-color: rgb(233, 215, 182);
+    grid-area:servicios;
+    
+}
+nav{
+    background-color: beige;
+    grid-area:nav;
+}
+aside{
+    background-color: rgb(235, 208, 134);
+    grid-area:publicidad;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    
+}
+/*-------header-------*/
+
+.tituloimg{
+    text-align: left;
+}
+.titulogym{
+    font-family: "oswald";
+    color: blue;
+    font-size: 70px; 
+    padding: 1rem;
+    
+}
+/*------section-----*/ 
+.subtema{
+    font-size: xx-large;
+    color: rgb(182, 65, 65);
+    text-align: center;
+    text-decoration: none;
+    margin: 1rem;
+    font-family: "roboto";
+}
+.sub2{
+    font-family: "oswald";
+    text-align: center;
+    text-decoration: none;
+    align-items: flex-end;
+    list-style: none;
+}
+.subtema2{
+    color: black;
+    font-size: xx-large;
+    list-style: none;
+    margin: 2rem;
+    font-family: "oswald";
+    text-align: center;
+    align-items: flex-end;
+    
+
+}
+.subtemaimg{
+    text-decoration: none;
+    text-align:center;
+    font-size: 0;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/*-----section2------*/
+.texto2{
+    text-align: center;
+    color: rgb(6, 6, 10);
+    text-decoration: none;
+    font-family: "roboto";
+    font-size: large;
+    margin: 1rem;
+}
+/*----navegador---*/
+.navegador{
+    
+    font-family: "roboto";
+    margin: 1rem;
+    margin-bottom: 20px;
+    display: flex;
+    color: blue;
+    flex-direction: column;
+    text-decoration: none;
+    
+
+}
+.navegador ul{
+    justify-content: center;
+}
+.navegador ul li{
+    padding: 10px;
+    list-style: none;
+    margin-bottom: 60px;
+    
+ 
+
+}
+.navegador ul li a{
+    text-decoration: none;
+    font-size: 30px;
+
+    
+   
+
+}
+/*---aside---*/
+aside{
+    display:flex;
+    flex-direction: column ;
+
+}
+.textoindu{
+    font-size: x-large;
+    color: blue;
+    font-family: "oswald";
+    padding: 1rem;
+    margin: 1rem;
+}
+.imgtiti{
+    width: 220px;
+}
+.imgronald{
+    width: 220px;
+}
+.imgbox{
+    width: 220px;
+}
+.imgpanch{
+    width: 220px;
+}
+
+.footer{
+    font-size: 25px;
+    font-family: "oswald";
+    color: blue;
+
+}
+
+
+/*-----media squeries-----*/
+
+@media only screen and (max-width: 480px) {
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+        
+    "header header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "footer footer footer"
+        ;
+    grid-template-rows: 100px 1fr 1fr 100px ;
+    grid-template-columns: 15% auto auto 15%;
+        
+    height: 100vh;
+        
+    }
+    .navegador ul li a{
+    font-size: 15px;
+
+ }
+.titulogym{
+font-size: 50px;
+}
+}
+@media only screen and (max-width: 768px){
+   
+.grid{
+    display: grid;
+    grid-template-areas: 
+            
+    "header header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "footer footer footer"
+            ;
+    grid-template-rows: 70px 1fr 1fr 100px ;
+    grid-template-columns: 15% auto auto 15%;
+            
+    height: 100vh;
+      
+    }
+.navegador ul li a{
+        font-size: 10px;
+    }   
+.titulogym{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .grid{
+        display: grid;
+        grid-template-areas: 
+            
+        "header header header"
+        "nav productos publicidad"
+        "nav servicios publicidad"
+        "footer footer footer"
+            ;
+        grid-template-rows: 140px 1fr 1fr 100px ;
+        grid-template-columns: 15% auto auto 15%;
+            
+        height: 100vh;
+      
+    }
+    .navegador ul li a{
+        font-size: 25px;}
+
+        .titulogym{
+            font-size: 60px;
+        }
+
+}
